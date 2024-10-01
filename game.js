@@ -4,11 +4,12 @@ var ucpa = [];
 var level = 0;
 var started = false;
 
-$(document).keydown(function() {
+$("#start-btn").click(function() {
     if (!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
+        $("#start-btn").hide(); // Hide the start button once the game begins
     }
 });
 
@@ -31,7 +32,7 @@ function checkAnswer(currentLevel) {
     } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Start to Restart");
 
         setTimeout(function() {
             $("body").removeClass("game-over");
@@ -70,4 +71,5 @@ function startOver() {
     level = 0;
     gp = [];
     started = false;
+    $("#start-btn").show(); // Show the start button again for a restart
 }
