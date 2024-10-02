@@ -1,0 +1,141 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+/* Styling for the Start button */
+#start-btn, #instructions-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px auto;
+  background-color: #6f25e7;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-btn:hover, #instructions-btn:hover {
+  background-color: #31c2df;
+}
+
+/* Centering the buttons */
+#start-btn, #instructions-btn {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Styling for instructions text */
+/* ... (previous CSS code remains the same) ... */
+
+#instructions {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
+  animation: pulse 1.5s infinite;
+  line-height: 1.8;
+}
+
+#instructions h1 {
+  color: #662de0;  /* Tomato red color for the title */
+  text-shadow: 3px 3px 6px #000;
+  font-size: 1.8em;  /* Increased font size for better visibility */
+  margin-bottom: 20px;  /* Added margin for separation from paragraph */
+  text-transform: uppercase;  /* Make the title all caps for emphasis */
+}
+
+#instructions p {
+  color: aqua;  /* Light cyan color for the paragraph text */
+  font-size: 1em;  /* Adjust the size as needed */
+}
+
+/* ... (rest of the CSS code remains the same) ... */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* Added styling for the back button */
+#back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#back-btn:hover {
+  background-color: #45a049;
+}
